@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Mapeado</title>
+</head>
+<body>
+    <h1>Mapeado de Imágenes en HTML</h1>
+    El mapeado de imágenes en HTML, sirve para especificar mediante una región geométrica
+    <br> de un mapa, un vínculo asociado a una cierta región.
+    <br>Esto va a asociado a una serie de etiquetas y atributos que son los siguientes:
+    <ul>
+        <li><b>usemap</b>: este atributo sirve para indicar en la foto, 
+            <br> que vamos a utilizar un mapeado y le damos un nombre.
+        </li>
+        <li><b>map y name</b>: Para establecer que vamos a utilizar un mapeado</li>
+        <li><b>area</b>: se utiliza para establecer la zona de mapeado de la imagen</li>
+        <li><b>coords</b>: establecemos las coordenadas de la región o mapeado que vamos a utilizar</li>
+        <li><b>shape</b>: es definir el tipo de región o mapeado que vamos a utilizar.
+            <ul>
+                <li>default: cuya región de mapeado ocupa toda la región o espacio de imagen (región completa).</li>
+                <li>rect: rectangular. Se establece con un punto X1,Y1 que representa la esquina superior izquierda
+                    <br> y un punto X2, Y2 que representa la esquina inferior derecha. </li>
+                <li>circle: circunferencia. Se establece con un punto central X1, Y1, y un valor de radio.</li>
+                <li>poly: poligonal. Se establece como mínimo 3 puntos o más para establecer un polígono de región del área.
+                    <br>Estos puntos, se establecen siguiendo el sentido de las agujas del reloj, y no siendo necesario
+                    <br>cerrar el último punto.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <img src="img/capitanironman.jpg" usemap="#marvel">
+    <map name="marvel">
+        <area shape="rect" coords="0,0,1006,1024" href="https://www.20minutos.es/" target="_blank">
+        <area shape="circle" coords="1277,249,95" href="https://universidadeuropea.com/" target="_blank">
+        <area shape="poly" coords="1260,420,1316,397,1308,440,1276,453" href="img/bob_patricio.png" target="_blank">
+    </map>
+</body>
+</html>

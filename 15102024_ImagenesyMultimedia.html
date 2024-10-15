@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>Imagenes y Multimedia</title>
+</head>
+<body>
+    <h1>Imagenes en HTML</h1>
+    En informática, podemos distinguir entre dos tipos de imágenes existentes.
+    <ul>
+        <li><b>imágenes de mapa de bits</b>: están formadas por puntos de colores.</li>
+        <li><b>imágenes vectoriales</b>: están formadas por formas geométricas</li>
+    </ul>
+    <br>Ventajas y Desventajas de Imágenes vectoriales
+    <ul>
+        <li>Ventaja: ocupan poco espacio y se pueden ampliar a cualquier escala sin
+            <br>que se pierda calidad de la imágen.
+        </li>
+        <li>Desventaja: no permiten representar imágenes sin formas definidas
+            <br> como sí ocurre con los fotografías.
+        </li>
+    </ul>
+    <br>Ventajas y Desventajas de Imágenes de Mapa de Bits
+    <ul>
+        <li>Ventaja: permiten representar imágenes sin formas definidas.</li>
+        <li>Desventaja: Pierden mucha calidad al ampliarlas, y además, ocupan
+            <br> mucho espacio en el disco duro.
+        </li>
+    </ul>
+    <br><img src="img/tipoImagenes.jpg" alt="">
+    <hr>
+    <h2>Insercción de Imágenes en HTML</h2>
+    Para insertar una imagen en html, vamos a utilizar la monoetiqueta <b>img</b>,
+    <br>además de utilizar esta monoetiqueta, utilizaremos el atributo asociado que es
+    <br>source. Este viene representado como <b>src</b>
+    <br>
+    <img src="img/dino.jpg" title="Hola caracola" alt="Este es un tiranosaurios rex" height="500px" width="60%" >
+    <br>A la hora de utilizar las imágenes, podemos asociarlos a una serie de atributos
+    <br> que nos permitan facilitarles una serie de características.
+    <br>Estos atributos son los siguientes:
+    <ul>
+        <li>src: indicar la dirección o ruta en la que se va a alojar la imagen que queremos insertar.</li>
+        <li>alt: viene dado de alternativo, y se utiliza para indicar un breve texto informativo
+            <br> sobre la imagen que vamos a insertar.
+        </li>
+        <li>height y width: se utilizan para dar altura y anchura a la foto.</li>
+        <li>usepmap: sirve para asociar a la imagen un mapa de imágenes (un mapeado)</li>
+        <li>title: contiene texto que se muestra en forma de tip para dar información 
+            <br> sobre la imagen. Para ello, tenemos que posicionar el cursor encima de la foto.
+        </li>
+    </ul>
+<hr>
+<h2>Etiqueta picture</h2>
+Se utiliza para dar una mayor flexibilidad a la hora de utilizar imágenes cuando
+<br> aplicamos conceptos de responsive web.
+<h2>Etiqueta Figure</h2>
+Se utiliza en HTML5 para mostrar un título asociado a una imagen.
+<br>Su estructura es la siguiente:
+<ul>
+    <li>figure: es la etiqueta padre.</li>
+    <li>img: es la etiqueta de la imagen</li>
+    <li>figcaption: etiqueta para el título de la foto</li>
+</ul>
+<figure align="center">
+    <img src="img/logo_html_css.png" width="50%" height="50%" >
+    <figcaption align="center">Logotipo de HTML5 y CSS3</figcaption>
+</figure>
+</body>
+</html>
