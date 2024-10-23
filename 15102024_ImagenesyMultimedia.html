@@ -66,5 +66,55 @@ Se utiliza en HTML5 para mostrar un título asociado a una imagen.
     <img src="img/logo_html_css.png" width="50%" height="50%" >
     <figcaption align="center">Logotipo de HTML5 y CSS3</figcaption>
 </figure>
+<hr>
+<h2>Insertar Audio y Vídeo en HTML5</h2>
+En HTML5, podemos insertar vídeos y audios de varias maneras.
+<ul>
+    <li>Mediante una etiqueta que se llama iframe, podemos insertar vídeos de
+        un servidor web. Ejemplo: Youtube.
+        <br>Inconveniente: Que si el servidor externo se cae o falla, el vídeo falla...(NO esta operativo)
+    </li>
+    <li>Mediante la etiqueta <b>video</b>. Mediante esta etiqueta, podemos insertar
+    <br>vídeos que tenemos alojados en nuestros propios equipos o servidores.
+    </li>
+    <li>
+        Mediante la etiqueta <b>audio</b>. Con esta etiqueta podemos insertar audios
+        <br>que tenemos alojados en nuestros propios equipos o servidores.
+    </li>
+</ul>
+<br>Insercción video de Youtube con iframe
+<br>
+<div align="center">
+    <iframe width="600" height="550" src="https://www.youtube.com/embed/iRTJJO6SZbc" title="Resumen Propiedades Interesantes en CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<br>
+<br>Insertar un vídeo desde mi propio servidor o PC
+<br><video src="multimedia/apple.mp4" width="500px" height="350px" poster="img/windows.jpeg" controls></video>
+<br><audio src="multimedia/bestofyou.mp3" controls></audio>
+<br>Atributos asociados a los audios y videos en HTML5
+<ul>
+    <li><b>src</b>:definir la URL o Dirección de nuestros archivos de audio y video</li>
+    <li><b>preload</b>es usado en audio y vídeo para almacenar archivos de gran tamaño temporalmente
+    <br>(buffering). Van asociados a:
+        <ul>
+            <li>none: no almacena nada</li>
+            <li>auto: almacena temporalmente archivos multimedia</li>
+            <li>metadata: almacena temporalmente sólo los metadatos de los archivos</li>
+        </ul>
+    </li>
+    <li><b>mediagroup</b>: para realizar agrupaciones multimedia</li>
+    <li><b>autoplay</b>: reproducir al inicio de la web</li>
+    <li><b>loop</b>: reproduce en formato bucle el audio o vídeo</li>
+    <li><b>muted</b>: silenciar el audio</li>
+    <li><b>controls</b>: controles del reproductor multimedia</li>
+    <li>Específicos a parte de los otros, para videos:
+        <ul>
+            <li><b>width y height</b></li>
+            <li><b>poster</b>: poner una imagen de comienzo al vídeo hasta que lo vamos a reproducir.</li>
+        </ul>
+    </li>
+</ul>
+
+
 </body>
 </html>
