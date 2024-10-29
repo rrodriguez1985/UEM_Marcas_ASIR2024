@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    Las tablas en HTML, se podrían definir como un conjunto de celdas en donde vamos a
+    <br>poder insertar cualquier tipo de información: texto, imágenes, multimedia, 
+    <br>formularios, otras tablas...
+    <br>La estructura de a la hora de crear tablas será la siguiente:
+    <ul>
+        <li><b>table</b>: la etiqueta table, tiene apertura y cierre, y sirve para
+        <br>definir que vamos a utilizar/crear una tabla en HTML.</li>
+        <li><b>tr</b>: es la etiqueta de apertura y cierre, que vamos a utilizar para
+        <br>definir las filas de nuestra tabla.</li>
+        <li><b>td</b>: es la etiqueta de apertura y cierre, que vamos a utilizar para
+        <br>definir las celdas que vamos a tener en nuestra tabla (columnas)</li>
+        <li>Recordar: en una tabla, podemos insertar cualquier tipo de información / 
+            <br> elemento: texto, imágenes, vídeos, audios, formularios, tablas, etc.
+        </li>
+    </ul>
+    <br>
+    <br>Ejemplo de tabla en HTML
+    <table border="1px">
+        <tr>
+            <td>Nombre</td>
+            <td>Raúl</td>
+        </tr>
+        <tr>
+            <td>Apellido</td>
+            <td>Rodríguez</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Propiedades que podemos usar en las tablas</h2>
+    <ul>
+        <li>
+            <b>table</b>: es la etiqueta que nos va a indicar que vamos a utilizar
+            <br>una tabla en HTML.
+        </li>
+        <li><b>caption</b>: es para poner un título en una tabla
+            <br>Podemos utilizar la alineación align=top o align=bottom.
+        </li>
+        <li><b>thead o th</b>: Define la cabecera de una tabla</li>
+        <li><b>tbody</b>: Define el contenido de la celda de una tabla</li>
+        <li><b>tfoot</b>: Define el pie de la tabla</li>
+        <li><b>tr</b>: Define la fila de una tabla</li>
+        <li><b>td</b>: Define la celda de una fila de la tabla, es decir, 
+        <br> las columnas de una tabla</li>
+        <li><b>border</b>: indica el grosor del borde de la tabla en px</li>
+    </ul>
+    <br>Ejemplo de tabla con th, tbody y tfoot
+    <table border="1px">
+        <caption align="top">Nominados del Balon de Oro 2024</caption>
+        <tbody>
+            <tr>
+                <td>Jugador</td>
+                <td>Equipo</td>
+                <th>Posición</th>
+            </tr>
+            <tr>
+                <td>Rodri</td>
+                <td>M.City</td>
+                <th>1º</th>
+            </tr>
+            <tr>
+                <td>Vinicius</td>
+                <td>R.Madrid</td>
+                <th>2º</th>
+            </tr>
+            <tr>
+                <td>Bellinghan</td>
+                <td>R.Madrid</td>
+                <th>3º</th>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Combinación de celdas en tablas</h3>
+    A la hora de diseñar tablas, podemos unificar celdas de manera tanto horizontal como
+    <br> de manera vertical.
+    <br>Para ello, utilizaremos las siguientes propiedades:
+    <ul>
+        <li><b>rowspan</b>: se utiliza para indicar el número de columnas que ocupan 
+        <br>cada celda. Es decir, combinación de celdas en vertical.</li>
+        <li><b>colspan</b>: se utiliza para indicar el número de filas que ocupan
+        <br>cada celda. Es decir, combinación de celdas en horizontal. </li>
+    </ul>
+    <br>A parte del rowspan y colspan, en las celdas, podemos aplicar los atributos
+    <br>cellpadding y cellspacing.
+    <ul>
+        <li><b>cellpadding</b>: especifica el espacio entre el borde de una celda
+        <br> y su contenido. </li>
+        <li><b>cellspacing</b>: especifica el espacio entre celdas</li>
+    </ul>
+    <br>
+    <br>Ejemplo de tabla combinada
+    <table border="1px" bordercolor="red" align="center" background="img/bob.jpg" width="800px" height="50%"
+    cellspacing="0">
+        <tr>
+            <!-- Primera fila -->
+            <td align="center" bgcolor="pink"><font color="white">A</font></td>
+            <td align="center">B</td>
+            <td align="center" rowspan="3">C</td>
+            <td align="center">D</td>
+        </tr>
+        <tr>
+            <!-- Segunda fila -->
+            <td align="center" rowspan="2">E</td>
+            <td align="center">F</td>
+            <td align="center" rowspan="3">G</td>
+        </tr>
+        <tr>
+            <td align="center">H</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">I</td>
+            <td align="center">J</td>
+        </tr>
+    </table>
+</body>
+</html>
