@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción CSS</title>
+</head>
+<body>
+    <h1>Introducción a CSS</h1>
+    En las primeras versiones de HTML, utilizabamos lo que son propiedades disponibles
+    <br> enlas etiquetas HTML, para poder asignar lo que se conoce como la "apariencia"
+    <br> de las paginas web.
+    <br>En las nuevas páginas HTML, principalmente las que usamos con la normativa
+    <br> HTML5, no "suelen" usar dichas propiedades para aplicar la apariencia a las
+    <br>páginas web.
+    <br>En este caso, lo que utilizaremos es un lenguaje de marcado que se llama CSS, y que
+    <br> significan "Hojas de Estilo en Cascada" (Cascading Style Sheet)
+    <br>Podemos establecer por lo tanto, que en la programación web vamos a tener como
+    <br> dos partes:
+    <ul>
+        <li>Estructura del código (estructura de la página web): etiquetas HTML</li>
+        <li>Apariencia del código (cómo queremos que sea el código que nosotros
+            <br> hemos introducido en la web, en cuanto a colores, tamaño, organización, etc.)
+            <br> propiedades CSS que vamos a aplicar a las etiquetas HTML
+            <br>Es decir, por un lado tendremos toda la parte de estructura (HTML) y por otra,
+            <br>tendremos la parte de apariencia (CSS)
+        </li>
+    </ul>
+    <br><img src="../img/html_css.png" alt="">
+    <br>Los motivos de porqué tenemos separado el CSS y el HTML son los siguientes:
+    <ul>
+        <li>De esta manera podemos tener por un lado el HTML y el CSS, y en caso
+            <br> de que tuviéramos que modificar cualquier tipo de cosa, lo tendríamos
+            <br>todo mucho más organizado y sería mucho más fácil de poder realizarlo.
+        </li>
+        <li>Si nosotros utilizamos CSS para maquetar páginas web que van a ser
+            <br> visualizadas en distintos dispositivos, esta adaptación es mucho más
+            <br>fácil que si lo tuvieramos las propiedades HTML realizando esta labor.
+        </li>
+        <li>Antes hacíamos páginas web con tablas, lo que hacía que el poder aplicar 
+            <br>métodos responsive (ajustables a distintos tamaños de tablas) fueran
+            <br>inviables...
+        </li>
+        <li>CSS en este aspecto, facilita el que podamos diseñar páginas de distintas
+            <br>estructuras, formas y apariencias que sean visualmente más atractivas
+            <br> y funcionales.
+        </li>
+    </ul>
+    <hr>
+    <h3>Versiones de CSS y tipos de CSS que podemos aplicar.</h3>
+    La versión actual de CSS, es la versión CSS3.
+    <br> Este es un estandar que data del año 2011, y que es la que actualmente se está
+    <br>empleando en prácticamente el 100% de las páginas web que hay/existen en internet.
+    <br>En base a esto, podemos comentar que las ventajas que tiene CSS son las siguientes:
+    <ul>
+        <li>Mayor control de la presentación del sitio web</li>
+        <li>Si necesitamos hacer modificaciones de presentación, lo hacemos en un sólo
+            <br> lugar y no tenemos que editar todos los elementos HTML por separado.
+        </li>
+        <li>Mayor legibilidad: más fácil de interpretar y entender</li>
+        <li>Se reduce la duplicidad de estilos en diferentes lugares, por lo que la información
+            <br>a transmitir es considerablemente menor (las páginas se descargan de manera mucho más rápidas)
+        </li>
+        <li>Es más fácil crear versiones diferentes de presentación para otros tipos de dispositivos:
+            <br>por ejemplo, una misma página web se puede visualizar en una tablet, en un smartphone o en un PC
+            <br> siendo su diferencia en cuanto a apariencia mínima.
+        </li>
+    </ul>
+    <br>Desventajas de CSS3
+    <ul>
+        <li>A veces, dependiendo del navegador que vayamos a utilizar para visualizar
+            <br>nuestras webs, puede que los elementos a los que hemos aplicado CSS, se 
+            <br> vean de una manera u otra. 
+        </li>
+        <li>El uso de tablas no permiten crear diseños complejos de forma mucho más sencilla
+            <br> que si utilizaramos CSS directamente.
+        </li>
+    </ul>
+    <h3>Tipos de CSS que podemos aplicar/utilizar en HTML</h3>
+    En HTML, podemos utilizar o tener, tres tipos de CSS para utilizar en nuestros diseños.
+    <ul>
+        <li>CSS Externo: Es aquel que va a estar contenido en archivo CSS con una extensión .css</li>
+        <li>CSS Interno: Es aquel que va a estar insertado directamente en el documento HTML</li>
+        <li>CSS Embebido: Es aquel que va a ser aplicado directamente a la etiqueta HTML a la que queramos
+            <br> aplicar las propiedades y características CSS.
+        </li>
+    </ul>
+    <h4>Ejemplo de CSS Externo</h4>
+    El CSS Externo, será un documento con extensión .css, que estará vinculado al HTML mediante la siguiente 
+    <br>estructura:
+    <ul>
+        <li>Crear el archivo externo css: style.css</li>
+        <li>Vincular el archivo .css, al documento HTML. Para ello, utilizaremos
+            <br>la etiqueta link seguido de rel="stylesheet" href=".css"
+            <br>rel=stylesheet, indica que vamos a utilizar un documento CSS para dar características de CSS
+            <br>a nuestro documento HTML. href sirve para vincular la ruta en donde se encuentra nuestro documento
+            <br>.css con el fin de tenerlo localizado para poderlo aplicar a nuestro HTML.
+
+        </li>
+        <li>TODO esto, se pone dentro de las etiquetas head del documento html.</li>
+    </ul>
+    <br>(Ejemplo CSS Externo del documento que tenemos adjunto)
+    <h4>Ejemplo de CSS Interno</h4>
+    Para crear un CSS Interno, tendremos que tener en cuenta las siguientes características:
+    <ul>
+        <li>Dentro de la etiqueta head, tendremos que insertar la etiqueta style</li>
+        <li>En la etiqueta style, deberemos insertar las características y propiedades
+            <br>CSS de la misma manera que hemos hecho con el CSS Externo.
+        </li>
+    </ul>
+    <br>(Ejemplo CSS Interno del documento que tenemos adjunto)
+</body>
+</html>

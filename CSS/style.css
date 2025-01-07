@@ -1,0 +1,15 @@
+body{
+    background-color: mediumpurple;
+    color:white;
+    font-size: 22px;
+}
+p{
+    color:greenyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: right;
+}
+img{
+    width: 400px;
+    height: 300px;
+}

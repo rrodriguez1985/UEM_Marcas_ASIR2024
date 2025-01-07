@@ -1,0 +1,21 @@
+div{
+    background-color: brown;
+    margin:1rem;
+    padding:1rem;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+}
+#unico{
+    background-color: yellow;
+    color:orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pokemon{
+    margin:1rem;
+    padding:1rem;
+    background-color: blue;
+    text-align: center;
+    color:white;
+    font-size: 24px;
+}
