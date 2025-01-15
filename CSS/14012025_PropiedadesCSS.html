@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgba(0, 255, 217, 0.606);
+        }
+        h1{
+            color:blue;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+        }
+        div{
+            margin:auto;
+            width:400px;
+            height: 80px;
+            border:2px solid white;
+            margin-top: 50px;
+            padding:50px;
+        }
+        
+    </style>
+    <title>Propiedades CSS</title>
+</head>
+<body>
+    <h1>Colores en CSS</h1>
+    Las propiedades que podemos utilizar en CSS para aplicar colores, son las siguientes:
+    <ul>
+        <li>color:Cambiar el color de texto en CSS</li>
+        <li>background-color:Camabiar el fondo del color de un elemento.</li>
+    </ul>
+    <br>A parte de esto, debemos tener en cuenta que podemos poner de varias maneras
+    <br> colores en CSS:
+    <ul>
+        <li>Palabra Clave: por ejemplo: color: red, blue, violet, etc.
+            <br> background-color:grey.--> El propio nombre del color.
+        </li>
+        <li>Esquema rgb(red, green, blue): rgb(255,255,48);</li>
+        <li>Esquema rgba(red, green, blue, alpha): rgba(255,255,48, valores que van del 0-1).
+            <br>Donde el 1 es la capa más oscura, y el 0 la más clara.
+        </li>
+        <li>Esquema RGB Hexadecimal: #RRGGBB --> #FF0055</li>
+        <li>Esquema RGB Hexadecimal Abreviado: #RGB --> #F05</li>
+    </ul>
+    <hr>
+    <h1>Unidades en CSS: Absolutas y Relativas</h1>
+    <ul>
+        <li><b>Unidades Absolutas:</b> Son las unidades que tienen un valor de medida fija.
+            <br>Son unidades poco flexibles, y son poco adaptables a resoluciones para diferentes
+            <br> tamaños de pantallas. P.E: cm, picas, in (pulgas), puntos (pt), etc.
+        </li>
+        <li><b>Unidades Relativas:</b> Son aquellas que tienen una medida más flexible, y sobre todo,
+            <br>adaptables a las resoluciones, y por lo tanto, son las que se suelen utilizar por lo general
+            <br> para la programación / maquetación web. P.E. em (16px), rem, px (pixel), % (porcentajes)...
+        </li>
+        <li><b>width:</b> que se utilizará para dar un tamaño de anchura a nuestro elemento </li>
+        <li><b>height:</b> que se utilizará para dar un tamaño de altura a nuestro elemento  </li>
+    </ul>
+    <h1>Modelos de Cajas en CSS</h1>
+    Todos los elementos HTML, cuando creamos páginas web, están dentro de lo que se conocen
+    <br> como cajas o contenedores de contenido.
+    <br>Las cajas que vamos a utilizar, son principalmente div (cajas) o etiquetas semánticas
+    <br> como pueden ser: nav, header, footer, aside, article, etc.
+    <br> Hasta ahora, utilizábamos tablas para maquetar, pero estas son poco flexibles y están 
+    <br> muy limitadas a la hora de poderlas ajustar a distintas resoluciones de pantallas.
+    <br> Por lo tanto, a la hora de realizar una maquetación web, lo que vamos a utilizar será 
+    <br> este tipo de cajas (div) con una serie de propiedades que son las que veremos a continuación
+    <br> para poder establecer la organización de los elementos que nosotros queramos
+    <br>
+    <br>Así, las propiedades que podemos utilizar son las siguientes:
+    <ul>
+        <li><b>margin:</b> corresponde al margen existente entre el borde exterior de nuestra caja/elemento
+            <br> y nuestro navegador.
+        </li>
+        <li><b>padding:</b> correponde al margen interior de nuestra caja, es decir, el espacio existente entre
+            <br>el contenido y el borde de nuestro elemento contenedores
+        </li>
+        <li><b>contenido:</b> son las etiquetas que van a ir dentro de nuestra caja o elemento contenedor</li>
+    </ul>
+    <br><img src="../img/ModelosCajasCSS.png">
+    <br><b>Ejemplo  de Div aplicando margin y padding</b>
+    <br>
+    <div>
+        Esto es un ejemplo de margin y padding aplicado a un div. adsfasdfadsfadsadsfadfafadsfadsfadfadfaasdfs
+    </div>
+
+</body>
+</html>
