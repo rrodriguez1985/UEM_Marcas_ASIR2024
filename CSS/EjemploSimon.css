@@ -1,0 +1,62 @@
+@font-face{
+    font-family: "starwars";
+    src:url(font/starwars.otf);
+}
+body{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+table, tr, td{
+    border:1px solid black;
+    border-spacing: 0px;
+    margin:auto;
+    border:none;
+   
+}
+table{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:20px outset black;
+    
+    
+}
+.verde{
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+.amarillo{
+    background-color: yellow;
+    border-top-right-radius: 100%;
+}
+.rojo{
+    background-color: red;
+    border-bottom-left-radius: 100%;
+}
+.azul{
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+#texto_defecto{
+            font-family: "Algerian";
+            font-size:20px;
+            color:chocolate;
+}
+#texto_dafont{
+    font-family: "starwars";
+    font-size: 32px;
+    text-align: center;
+    color:white;
+}
+#texto_google{
+    font-family: "Playwrite VN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:crimson;
+    font-size: 22px;
+    text-align: right;
+}

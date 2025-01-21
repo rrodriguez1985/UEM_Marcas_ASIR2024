@@ -22,6 +22,107 @@
             margin-top: 50px;
             padding:50px;
         }
+        table, tr, td{
+    border:1px solid white;
+    margin:100px;
+    padding:10px;
+}
+table{
+    border:1px solid black;
+    background-color: darkgreen;
+    color:beige;
+}
+td{
+    font-size: 22px;;
+    background-color: brown;
+}
+.tamano{
+    font-size: 32px;
+    color:lightgreen;
+}
+#letra{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+span{
+    color:blue;
+    font-size: 50px;
+}
+.margenes{
+    border: 2px solid black;
+    background-color: coral;
+    color:white;
+    /*margin: se refiere a los márgenes exteriores de nuestros elementos.*/
+    margin:50px;
+    /*padding: se refiere a los márgenes interiores de nuestros elementos*/
+    padding:20px;
+}
+.visible{
+    height: 300px;
+    width: 300px;
+    color:white;
+    border:2px solid red;
+    overflow:visible;
+    /*overflow: sirve para indicar al navegador lo que tiene que hacer con el 
+    contenido que no cabe dentro de una caja/div y que es considerado como contenido
+    sobrante*/
+    /*overflow:visible --> hace que el texto sobrante, sobresalga de la caja, de tal manera
+     que se desborde y no coja dentro de ella, mostrándola por defecto.*/
+}
+.hidden{
+    height: 250px;
+    width: 300px;
+    color:white;
+    border:2px solid red;
+    padding:10px;
+    text-align: justify;
+    overflow:hidden;
+    /*overflow: sirve para indicar al navegador lo que tiene que hacer con el 
+    contenido que no cabe dentro de una caja/div y que es considerado como contenido
+    sobrante*/
+    /*overflow:hidden --> hace que el texto sobrante, lo esconde/oculta con respecto
+    a la caja principal, dando sensación de que no sobresale nada.*/
+}
+.scroll{
+    height: 250px;
+    width: 300px;
+    color:white;
+    border:2px solid red;
+    padding:10px;
+    text-align: justify;
+    overflow:scroll;
+    /*overflow: sirve para indicar al navegador lo que tiene que hacer con el 
+    contenido que no cabe dentro de una caja/div y que es considerado como contenido
+    sobrante*/
+    /*overflow:scroll --> hace que en la caja contenedora del texto, se coloque una
+    barra de desplazamiento (principalmente vertical aunque también se puede colocar
+    horizontalmente), con el fin de mostrar el contenido oculto.*/
+}
+.auto{
+    height: 250px;
+    width: 100px;
+    color:white;
+    border:2px solid red;
+    padding:10px;
+    text-align: justify;
+    overflow:auto;
+    /*overflow: sirve para indicar al navegador lo que tiene que hacer con el 
+    contenido que no cabe dentro de una caja/div y que es considerado como contenido
+    sobrante*/
+    /*overflow:auto --> el navegador, de manera automática, coloca las barras de
+    desplazamiento bien horizontal o bien vertical, con el fin de mostrar el contenido
+    oculto.*/
+}
+.imagenbordes{
+    width: 500px;
+}
+.redondeado{
+    border: 50px solid black;
+    border-radius: 50%;
+    border-style: double dotted;
+    border-color:brown violet red green;
+    display: block;
+    margin:auto;
+}
         
     </style>
     <title>Propiedades CSS</title>
@@ -87,6 +188,204 @@
     <div>
         Esto es un ejemplo de margin y padding aplicado a un div. adsfasdfadsfadsadsfadfafadsfadsfadfadfaasdfs
     </div>
-
+    <br>
+    <table>
+        <tr>
+            <td class="tamano">Hola</td>
+            <td>Adios</td>
+        </tr>
+        <tr>
+            <td class="tamano" id="letra"><span>B</span>ye <span style="color:red">bye</span></td>
+            <td>Arrivederci</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Ejemplo de Aplicación de Margin y Padding en un div</h3>
+    <p class="margenes">
+        Esto es un ejemplo de texto al que se le ha aplicado margin y padding
+    </p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi maiores, iste autem sapiente vitae, quam modi odio velit numquam amet et dolor repudiandae. Voluptas ex repellendus quasi voluptate voluptatem.
+    Excepturi accusamus incidunt eum qui voluptatibus ipsum delectus, veritatis praesentium, unde optio neque, est corrupti laborum architecto cum minima? Accusantium ipsam quaerat quis rerum dolores reprehenderit rem odio eligendi ducimus.
+    Vitae at eius perferendis magni, ut debitis in est temporibus distinctio laboriosam atque inventore dolor blanditiis earum aspernatur repellendus ex quas aliquid fugit recusandae facilis dolores dicta possimus officiis. Animi!
+    Asperiores quam consequatur minima exercitationem totam iusto iure ipsa, voluptatibus nobis alias temporibus voluptatum est maxime qui explicabo ea rem at laborum nam, saepe repellat sit! Magni et blanditiis error.
+    A eveniet repellat illo ex perspiciatis fugit dolorum, non excepturi corporis ea. Unde quisquam earum impedit accusamus dignissimos fugit, animi porro sunt pariatur, error eius eos est nihil cupiditate! Aspernatur!
+<h2>Modelos de Caja: Elementos en Linea y Elementos en Bloque</h2>
+<ul>
+    <li><b>Elementos en línea:</b> Los elementos en línea son aquellos que se van 
+    <br> sucediendo a lo largo de la misma línea de nuestra web, mientras vayan
+    <br> cogiendo unos detras de otros y de izquierda a derecha. Van por lo tanto siguiendo
+    <br> el flujo de la orientación.
+    </li>
+    <li><b>Elementos en bloque:</b> son aquellos que, independientemente de la anchura que tengan
+    <br> se separan verticalmente de los Elementos posteriores y anteriores.
+    <br>Es como si provocaran un salto de línea antes y después de un elemento.</li>
+</ul>
+<hr>
+<h2>Modelos de Cajas en CSS: Ejemplos de Overflow</h2>
+En CSS, utilizamos la propiedad <b>overflow</b>, para indicar al navegador lo que debe de hacer el 
+<br> contenido  que no cabe dentro de una capa div y que es considerador como contenido sobrante.
+<h3>Ejemplo de Overflow Visible</h3>
+<div class="visible">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus magni excepturi nobis cum? Aliquid maiores placeat veritatis tempora repellat minus, molestiae amet dolor sequi perspiciatis excepturi. Optio nesciunt aliquam aliquid?
+    Quisquam ullam libero, quidem accusamus, possimus recusandae soluta, eum vitae porro placeat quo molestias vero ipsam. Enim voluptas ea voluptatum veritatis illo. Dolores nam asperiores odit sit amet debitis veritatis?
+    Maxime autem architecto ea ipsam sunt omnis numquam blanditiis soluta! Incidunt, animi tempore voluptatem ipsa ex voluptatibus laudantium voluptatum quaerat in beatae reprehenderit quasi dolorum aperiam, saepe minus asperiores veritatis.
+    Facere, ipsam eligendi similique commodi suscipit quasi voluptatem. Voluptatibus accusamus facere officiis ullam corporis quod. Nisi atque magni error maxime quae, quaerat itaque debitis perspiciatis possimus voluptatem, ipsam fuga quibusdam.
+    Amet laborum rerum iusto sed quidem ipsam nemo est vel aliquam atque. Commodi, vitae temporibus earum deleniti soluta, reiciendis eligendi voluptate consequatur cum quidem quaerat, laudantium at neque. Corrupti, ea.
+    Quaerat natus id quam beatae! Numquam laborum, aliquam voluptas magni nihil excepturi repellat sed vero impedit totam atque architecto velit sequi expedita facere minus odit, aperiam beatae? Repellendus, nobis placeat!
+    Perspiciatis quibusdam, fugit eum commodi sint molestiae dicta, amet laborum quidem ea dolorum tempora eveniet quisquam? Minima inventore, harum, esse cupiditate, molestiae aspernatur adipisci quam tempore culpa possimus rem exercitationem.
+    Reiciendis necessitatibus illo odio dolores, possimus pariatur provident beatae eligendi error laboriosam quam laborum sit iure similique illum soluta odit? Repellendus veritatis perspiciatis totam id illo a sed similique atque!
+    Eligendi laborum dolore ea incidunt, nostrum minus nulla veritatis animi hic dicta fuga velit facere veniam molestiae. Ullam aut harum voluptates, laborum aliquid accusantium at doloribus, voluptatibus architecto dolores id!
+    Animi aut minus eos quibusdam qui fuga, corporis est sint sit eius quia, voluptatibus numquam suscipit sed ad laboriosam illum veritatis at autem esse! Quibusdam, delectus voluptas? Temporibus, dicta molestias.
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h3>Ejemplo de Overflow Hidden</h3>
+<div class="hidden">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eveniet reiciendis fuga minima ipsa illum assumenda aliquam velit aspernatur deserunt. Commodi atque ipsam ex iure soluta accusamus vero reiciendis natus!
+    Aliquam non voluptate itaque cum odio rem provident nesciunt, minus, quisquam dolorem soluta optio accusamus veritatis, eveniet a quam incidunt pariatur voluptates? Quisquam nisi ex dolore eius, temporibus vel excepturi.
+    Tempora vel quidem aliquam praesentium sint totam hic vero dolore numquam iure id, fuga voluptates suscipit maxime velit? Fugit, iste vero ad dolorem iusto consectetur aperiam! Blanditiis veritatis voluptatibus adipisci?
+    Commodi at esse magni. Voluptatibus odio fuga pariatur illo animi eveniet perspiciatis, maiores perferendis tempore asperiores eos alias laudantium sunt officiis numquam! Nam numquam possimus, doloremque laboriosam necessitatibus totam neque.
+    Provident autem architecto nam deleniti. Odit blanditiis odio hic ullam, optio id laboriosam, quis facere natus cupiditate reprehenderit recusandae maxime, voluptas est dignissimos quisquam doloribus tenetur praesentium iusto? Labore, totam.
+    Velit rem dicta exercitationem at, aliquam neque quibusdam nesciunt atque dolore, odit ea, distinctio soluta rerum repudiandae alias! Ullam a in accusantium facilis iusto sapiente voluptas dolore hic mollitia aliquid.
+    Placeat cumque perferendis minus laudantium aliquam dolore nesciunt ex totam maiores at recusandae accusantium maxime eveniet, ipsam ea, ab cum eligendi fugiat, itaque iusto saepe? Doloribus laborum animi fugit amet.
+    Fugiat est esse cumque voluptatem mollitia recusandae optio asperiores, ipsa aliquam magni sequi odit deserunt non aut cupiditate, quia atque similique vero accusantium obcaecati nemo. Eos aliquam maxime nulla laudantium!
+    Eveniet culpa mollitia, voluptatum non alias ex doloremque dignissimos sequi dolorem deleniti unde quod placeat eos ea, at aliquid quo repellat, adipisci cupiditate nesciunt itaque dolore vel. Nisi, explicabo minus?
+    Rerum illo eum quis nam quae laudantium ipsa repellat perspiciatis beatae sit neque, cumque temporibus, a corrupti tempora suscipit dolorem quod veritatis laborum velit labore iusto, repudiandae nesciunt? A, nihil.
+    Recusandae voluptatem rerum architecto velit beatae dolor molestias, vitae molestiae laboriosam itaque quisquam. Ab culpa sint, pariatur, velit nisi sequi eos sunt facere aliquid inventore, officia voluptates sed magnam ducimus!
+    Consequatur alias expedita reiciendis libero illum recusandae nulla dolorum minima distinctio nobis vel inventore laudantium velit necessitatibus adipisci voluptates aliquam, minus pariatur exercitationem excepturi provident eveniet! Soluta reprehenderit obcaecati atque?
+    Rerum dolorum architecto ipsum praesentium a reiciendis soluta, sed libero quasi nostrum recusandae dolorem neque repellat! Quisquam cum quis quod obcaecati ratione itaque asperiores quaerat, omnis debitis exercitationem voluptate. Non.
+    Odit atque id expedita praesentium neque, dolore enim ipsam recusandae similique. Numquam quo quisquam iste provident voluptatum! Explicabo neque ex quia, reiciendis ipsa pariatur tempora numquam quod, itaque dolorem ullam.
+    Placeat, non. Explicabo perferendis facilis aliquam molestiae suscipit voluptatum deserunt cum? Maxime expedita ut, laudantium aliquid eum blanditiis, recusandae molestias quasi esse animi in ullam, nesciunt nobis itaque porro tempore!
+    Ullam vel earum asperiores enim, eos voluptatem praesentium deserunt labore tempore! Ipsa, neque suscipit iure nesciunt atque adipisci ad pariatur, ipsam aliquam nemo vitae ex autem explicabo sed! Reiciendis, unde?
+    Quod culpa incidunt aspernatur explicabo, tempora, ex optio officia temporibus beatae praesentium ad nisi quia! Inventore quas quae nihil perspiciatis explicabo officia voluptatibus est, corporis sit tempora, illo culpa. Quod?
+    Aperiam aut vero itaque placeat porro quasi qui quis quas est debitis, doloremque quibusdam libero, blanditiis eligendi voluptates ratione quam. Maiores consequatur ducimus rerum! Fugit accusamus quis labore earum praesentium.
+    Quod tempore error et ullam architecto nostrum pariatur dolorem officia reprehenderit voluptatibus, optio soluta mollitia blanditiis repellendus cupiditate libero consequatur magnam. Ea consequuntur hic sapiente architecto earum nihil, consectetur numquam.
+    Eos dolore doloribus quam, modi iure iusto praesentium voluptatum illum eius! Ratione tempora, obcaecati repellendus, iusto molestiae repudiandae quas rem repellat asperiores doloremque odio quae esse at sit adipisci. Odit.
+    Tenetur recusandae commodi temporibus animi magni! Rem veritatis enim commodi reprehenderit minima, odio sequi officia itaque aut? Quod itaque, recusandae ab quis vero fuga minus! Laborum perferendis repellendus atque beatae.
+    Omnis, dolorum. Voluptas rem obcaecati nesciunt, tenetur totam iure similique odit magni inventore cum culpa perferendis ducimus non quae deleniti sint quod blanditiis tempore eos pariatur nisi. Reprehenderit, officia ea.
+    Earum quo pariatur exercitationem porro! Qui, sint? Veritatis minima quis corrupti necessitatibus delectus, rem doloremque dolor omnis cupiditate nostrum officiis aspernatur asperiores dolore blanditiis ullam voluptate, nisi repudiandae itaque mollitia!
+    Blanditiis incidunt, accusantium porro quod velit quasi temporibus reprehenderit! Incidunt explicabo quisquam dolorum doloremque nemo earum! Tenetur in perspiciatis nostrum adipisci mollitia eius voluptatibus corrupti architecto iste veniam! Exercitationem, quisquam!
+    Aut veritatis at aliquam sequi culpa deserunt perspiciatis, nesciunt earum rerum perferendis consequatur cumque accusamus molestiae eveniet. Saepe expedita sit ipsam tempore voluptates magnam, veritatis amet doloribus adipisci, dolorum velit!
+</div>
+<br><br><br><br><br><br><br><br><br>
+<h3>Ejemplo de Overflow Scroll</h3>
+<div class="scroll">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eveniet reiciendis fuga minima ipsa illum assumenda aliquam velit aspernatur deserunt. Commodi atque ipsam ex iure soluta accusamus vero reiciendis natus!
+    Aliquam non voluptate itaque cum odio rem provident nesciunt, minus, quisquam dolorem soluta optio accusamus veritatis, eveniet a quam incidunt pariatur voluptates? Quisquam nisi ex dolore eius, temporibus vel excepturi.
+    Tempora vel quidem aliquam praesentium sint totam hic vero dolore numquam iure id, fuga voluptates suscipit maxime velit? Fugit, iste vero ad dolorem iusto consectetur aperiam! Blanditiis veritatis voluptatibus adipisci?
+    Commodi at esse magni. Voluptatibus odio fuga pariatur illo animi eveniet perspiciatis, maiores perferendis tempore asperiores eos alias laudantium sunt officiis numquam! Nam numquam possimus, doloremque laboriosam necessitatibus totam neque.
+    Provident autem architecto nam deleniti. Odit blanditiis odio hic ullam, optio id laboriosam, quis facere natus cupiditate reprehenderit recusandae maxime, voluptas est dignissimos quisquam doloribus tenetur praesentium iusto? Labore, totam.
+    Velit rem dicta exercitationem at, aliquam neque quibusdam nesciunt atque dolore, odit ea, distinctio soluta rerum repudiandae alias! Ullam a in accusantium facilis iusto sapiente voluptas dolore hic mollitia aliquid.
+    Placeat cumque perferendis minus laudantium aliquam dolore nesciunt ex totam maiores at recusandae accusantium maxime eveniet, ipsam ea, ab cum eligendi fugiat, itaque iusto saepe? Doloribus laborum animi fugit amet.
+    Fugiat est esse cumque voluptatem mollitia recusandae optio asperiores, ipsa aliquam magni sequi odit deserunt non aut cupiditate, quia atque similique vero accusantium obcaecati nemo. Eos aliquam maxime nulla laudantium!
+    Eveniet culpa mollitia, voluptatum non alias ex doloremque dignissimos sequi dolorem deleniti unde quod placeat eos ea, at aliquid quo repellat, adipisci cupiditate nesciunt itaque dolore vel. Nisi, explicabo minus?
+    Rerum illo eum quis nam quae laudantium ipsa repellat perspiciatis beatae sit neque, cumque temporibus, a corrupti tempora suscipit dolorem quod veritatis laborum velit labore iusto, repudiandae nesciunt? A, nihil.
+    Recusandae voluptatem rerum architecto velit beatae dolor molestias, vitae molestiae laboriosam itaque quisquam. Ab culpa sint, pariatur, velit nisi sequi eos sunt facere aliquid inventore, officia voluptates sed magnam ducimus!
+    Consequatur alias expedita reiciendis libero illum recusandae nulla dolorum minima distinctio nobis vel inventore laudantium velit necessitatibus adipisci voluptates aliquam, minus pariatur exercitationem excepturi provident eveniet! Soluta reprehenderit obcaecati atque?
+    Rerum dolorum architecto ipsum praesentium a reiciendis soluta, sed libero quasi nostrum recusandae dolorem neque repellat! Quisquam cum quis quod obcaecati ratione itaque asperiores quaerat, omnis debitis exercitationem voluptate. Non.
+    Odit atque id expedita praesentium neque, dolore enim ipsam recusandae similique. Numquam quo quisquam iste provident voluptatum! Explicabo neque ex quia, reiciendis ipsa pariatur tempora numquam quod, itaque dolorem ullam.
+    Placeat, non. Explicabo perferendis facilis aliquam molestiae suscipit voluptatum deserunt cum? Maxime expedita ut, laudantium aliquid eum blanditiis, recusandae molestias quasi esse animi in ullam, nesciunt nobis itaque porro tempore!
+    Ullam vel earum asperiores enim, eos voluptatem praesentium deserunt labore tempore! Ipsa, neque suscipit iure nesciunt atque adipisci ad pariatur, ipsam aliquam nemo vitae ex autem explicabo sed! Reiciendis, unde?
+    Quod culpa incidunt aspernatur explicabo, tempora, ex optio officia temporibus beatae praesentium ad nisi quia! Inventore quas quae nihil perspiciatis explicabo officia voluptatibus est, corporis sit tempora, illo culpa. Quod?
+    Aperiam aut vero itaque placeat porro quasi qui quis quas est debitis, doloremque quibusdam libero, blanditiis eligendi voluptates ratione quam. Maiores consequatur ducimus rerum! Fugit accusamus quis labore earum praesentium.
+    Quod tempore error et ullam architecto nostrum pariatur dolorem officia reprehenderit voluptatibus, optio soluta mollitia blanditiis repellendus cupiditate libero consequatur magnam. Ea consequuntur hic sapiente architecto earum nihil, consectetur numquam.
+    Eos dolore doloribus quam, modi iure iusto praesentium voluptatum illum eius! Ratione tempora, obcaecati repellendus, iusto molestiae repudiandae quas rem repellat asperiores doloremque odio quae esse at sit adipisci. Odit.
+    Tenetur recusandae commodi temporibus animi magni! Rem veritatis enim commodi reprehenderit minima, odio sequi officia itaque aut? Quod itaque, recusandae ab quis vero fuga minus! Laborum perferendis repellendus atque beatae.
+    Omnis, dolorum. Voluptas rem obcaecati nesciunt, tenetur totam iure similique odit magni inventore cum culpa perferendis ducimus non quae deleniti sint quod blanditiis tempore eos pariatur nisi. Reprehenderit, officia ea.
+    Earum quo pariatur exercitationem porro! Qui, sint? Veritatis minima quis corrupti necessitatibus delectus, rem doloremque dolor omnis cupiditate nostrum officiis aspernatur asperiores dolore blanditiis ullam voluptate, nisi repudiandae itaque mollitia!
+    Blanditiis incidunt, accusantium porro quod velit quasi temporibus reprehenderit! Incidunt explicabo quisquam dolorum doloremque nemo earum! Tenetur in perspiciatis nostrum adipisci mollitia eius voluptatibus corrupti architecto iste veniam! Exercitationem, quisquam!
+    Aut veritatis at aliquam sequi culpa deserunt perspiciatis, nesciunt earum rerum perferendis consequatur cumque accusamus molestiae eveniet. Saepe expedita sit ipsam tempore voluptates magnam, veritatis amet doloribus adipisci, dolorum velit!
+</div>
+<h3>Ejemplo de Overflow Auto</h3>
+<div class="auto">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eveniet reiciendis fuga minima ipsa illum assumenda aliquam velit aspernatur deserunt. Commodi atque ipsam ex iure soluta accusamus vero reiciendis natus!
+    Aliquam non voluptate itaque cum odio rem provident nesciunt, minus, quisquam dolorem soluta optio accusamus veritatis, eveniet a quam incidunt pariatur voluptates? Quisquam nisi ex dolore eius, temporibus vel excepturi.
+    Tempora vel quidem aliquam praesentium sint totam hic vero dolore numquam iure id, fuga voluptates suscipit maxime velit? Fugit, iste vero ad dolorem iusto consectetur aperiam! Blanditiis veritatis voluptatibus adipisci?
+    Commodi at esse magni. Voluptatibus odio fuga pariatur illo animi eveniet perspiciatis, maiores perferendis tempore asperiores eos alias laudantium sunt officiis numquam! Nam numquam possimus, doloremque laboriosam necessitatibus totam neque.
+    Provident autem architecto nam deleniti. Odit blanditiis odio hic ullam, optio id laboriosam, quis facere natus cupiditate reprehenderit recusandae maxime, voluptas est dignissimos quisquam doloribus tenetur praesentium iusto? Labore, totam.
+    Velit rem dicta exercitationem at, aliquam neque quibusdam nesciunt atque dolore, odit ea, distinctio soluta rerum repudiandae alias! Ullam a in accusantium facilis iusto sapiente voluptas dolore hic mollitia aliquid.
+    Placeat cumque perferendis minus laudantium aliquam dolore nesciunt ex totam maiores at recusandae accusantium maxime eveniet, ipsam ea, ab cum eligendi fugiat, itaque iusto saepe? Doloribus laborum animi fugit amet.
+    Fugiat est esse cumque voluptatem mollitia recusandae optio asperiores, ipsa aliquam magni sequi odit deserunt non aut cupiditate, quia atque similique vero accusantium obcaecati nemo. Eos aliquam maxime nulla laudantium!
+    Eveniet culpa mollitia, voluptatum non alias ex doloremque dignissimos sequi dolorem deleniti unde quod placeat eos ea, at aliquid quo repellat, adipisci cupiditate nesciunt itaque dolore vel. Nisi, explicabo minus?
+    Rerum illo eum quis nam quae laudantium ipsa repellat perspiciatis beatae sit neque, cumque temporibus, a corrupti tempora suscipit dolorem quod veritatis laborum velit labore iusto, repudiandae nesciunt? A, nihil.
+    Recusandae voluptatem rerum architecto velit beatae dolor molestias, vitae molestiae laboriosam itaque quisquam. Ab culpa sint, pariatur, velit nisi sequi eos sunt facere aliquid inventore, officia voluptates sed magnam ducimus!
+    Consequatur alias expedita reiciendis libero illum recusandae nulla dolorum minima distinctio nobis vel inventore laudantium velit necessitatibus adipisci voluptates aliquam, minus pariatur exercitationem excepturi provident eveniet! Soluta reprehenderit obcaecati atque?
+    Rerum dolorum architecto ipsum praesentium a reiciendis soluta, sed libero quasi nostrum recusandae dolorem neque repellat! Quisquam cum quis quod obcaecati ratione itaque asperiores quaerat, omnis debitis exercitationem voluptate. Non.
+    Odit atque id expedita praesentium neque, dolore enim ipsam recusandae similique. Numquam quo quisquam iste provident voluptatum! Explicabo neque ex quia, reiciendis ipsa pariatur tempora numquam quod, itaque dolorem ullam.
+    Placeat, non. Explicabo perferendis facilis aliquam molestiae suscipit voluptatum deserunt cum? Maxime expedita ut, laudantium aliquid eum blanditiis, recusandae molestias quasi esse animi in ullam, nesciunt nobis itaque porro tempore!
+    Ullam vel earum asperiores enim, eos voluptatem praesentium deserunt labore tempore! Ipsa, neque suscipit iure nesciunt atque adipisci ad pariatur, ipsam aliquam nemo vitae ex autem explicabo sed! Reiciendis, unde?
+    Quod culpa incidunt aspernatur explicabo, tempora, ex optio officia temporibus beatae praesentium ad nisi quia! Inventore quas quae nihil perspiciatis explicabo officia voluptatibus est, corporis sit tempora, illo culpa. Quod?
+    Aperiam aut vero itaque placeat porro quasi qui quis quas est debitis, doloremque quibusdam libero, blanditiis eligendi voluptates ratione quam. Maiores consequatur ducimus rerum! Fugit accusamus quis labore earum praesentium.
+    Quod tempore error et ullam architecto nostrum pariatur dolorem officia reprehenderit voluptatibus, optio soluta mollitia blanditiis repellendus cupiditate libero consequatur magnam. Ea consequuntur hic sapiente architecto earum nihil, consectetur numquam.
+    Eos dolore doloribus quam, modi iure iusto praesentium voluptatum illum eius! Ratione tempora, obcaecati repellendus, iusto molestiae repudiandae quas rem repellat asperiores doloremque odio quae esse at sit adipisci. Odit.
+    Tenetur recusandae commodi temporibus animi magni! Rem veritatis enim commodi reprehenderit minima, odio sequi officia itaque aut? Quod itaque, recusandae ab quis vero fuga minus! Laborum perferendis repellendus atque beatae.
+    Omnis, dolorum. Voluptas rem obcaecati nesciunt, tenetur totam iure similique odit magni inventore cum culpa perferendis ducimus non quae deleniti sint quod blanditiis tempore eos pariatur nisi. Reprehenderit, officia ea.
+    Earum quo pariatur exercitationem porro! Qui, sint? Veritatis minima quis corrupti necessitatibus delectus, rem doloremque dolor omnis cupiditate nostrum officiis aspernatur asperiores dolore blanditiis ullam voluptate, nisi repudiandae itaque mollitia!
+    Blanditiis incidunt, accusantium porro quod velit quasi temporibus reprehenderit! Incidunt explicabo quisquam dolorum doloremque nemo earum! Tenetur in perspiciatis nostrum adipisci mollitia eius voluptatibus corrupti architecto iste veniam! Exercitationem, quisquam!
+    Aut veritatis at aliquam sequi culpa deserunt perspiciatis, nesciunt earum rerum perferendis consequatur cumque accusamus molestiae eveniet. Saepe expedita sit ipsam tempore voluptates magnam, veritatis amet doloribus adipisci, dolorum velit!
+</div>
+<hr>
+<h2>Modelos de Cajas en CSS: zonas de un elemento </h2>
+Dentro de una caja podemos encontrarnos las siguientes zonas  a tener en cuenta:
+<ul>
+    <li>Top: se refiere a la parte superior del elemento</li>
+    <li>Left: se refiere a la parte izquierda del elemento</li>
+    <li>Right: se refiere a la parte derecha del elemento</li>
+    <li>Bottom: se refiere a la parte inferior del elemento</li>
+    <li>Center: hace referencia a la posición central entre dos elementos</li>
+</ul>
+<br>Estos elementos podemos aplicarlos de la siguiente manera:
+<ul>
+    <li>margin-top o padding-top</li>
+    <li>margin-bottom o padding-bottom</li>
+    <li>margin-right o padding-right</li>
+    <li>margin-left o padding-left</li>
+</ul>
+<br>La aplicación de estos elementos se pueden establecer de la siguiente manera:
+<ul>
+    <li>margin o padding con un solo valor: aplica a los 4 margenes de los elementos. P.E.: margin: 40px;</li>
+    <li>margin o padding con dos valores: el primer valor, aplica a top y bottom.
+        <br>El segundo valor, aplica a right y left. P.E.: margin: 20px 40px;</li>
+    <li>margin o padding con tres valores: EL primer valor, aplica a Top.
+        <br>El segundo valor aplica right y left.
+        <br> El tercer valor aplica a Bottom. P.E.: margin: 20px 40px 15px;</li>
+    <li>margin o padding con 4 valores: El primer valor aplica a Top.
+        <br>Segundo valor aplica a right.
+        <br>Tercer valor aplica a Bottom.
+        <br>Cuarto valor, aplica a Left. P.E.: margin: 10px 20px 60px 40px;</li>
+</ul>
+<br>MUY IMPORTANTE: Cuando se establecen estos valores se tiene que tener encuenta que se 
+<br> sigue el sentido de las agujas del reloj. Siendo en este último caso, el primer elemento
+<br> el TOP, el segundo el Right, el tercero Bottom y el cuarto Left.
+<br>Esto no quita, que podáis aplicar un valor concreto a un lado concreto.
+<br>P.E.: margin-top: 50px; y este valor, sólo se aplicará a la parte top del margen.
+<h2>Tipos de Bordes en CSS</h2>
+CSS nos permite utilizar diversos tipos de propiedades para utilizar en los bordes de cajas,
+<br>imágenes y otros elementos.
+<br>Para ello, podemos utilizar las siguientes propiedades:
+<ul>
+    <li><b>border-color</b>:se utiliza para poder dar color a un borde</li>
+    <li><b>border-width</b>: es una propiedad que se utiliza para dar grosor al borde.
+    <br>thin / medium / thick</li>
+    <li><b>border-style</b>: definir un estilo del borde en CSS</li>
+</ul>
+<br>Los tipos de border-style que podemos utilizar en CSS son los siguientes:
+<ul>
+    <li>none:no aplica ningún tipo de estilo y coger el valor por defecto.</li>
+    <li>hidden: "ocultar" los bordes</li>
+    <li>dotted: establecer puntos en los bordes</li>
+    <li>dashed: establecer rayas discontinuas</li>
+    <li>solod: border sólido</li>
+    <li>double: una doble línea de borde</li>
+    <li>groove: biselado con luz desde arriba</li>
+    <li>ridge: biselado con luz desde abajo</li>
+    <li>inset: establece un borde conprofundidad hacia dentro</li>
+    <li>outsed:establece un borde conprofundidad hacia fuera</li>
+</ul>
+<br> Ejemplos de bordes en CSS 
+<br><img class="imagenbordes" src="../img/bordesCSS.png" alt="">
+<h3>Ejemplo de Bordes Redondeados en CSS</h3>
+Para hacer bordes redondeados en CSS, utilizamos una propiedad que se llama <b>border-radius</b>
+<br>
+<img class="redondeado" src="../img/horaaventuras.jpg" alt="">
 </body>
 </html>
