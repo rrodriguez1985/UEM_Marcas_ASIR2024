@@ -1,0 +1,63 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-image: url(../img/ciber.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+header{
+    margin:auto;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+/*Daremos estilo a nuestro menú principal, contenido en la clase nav*/
+.nav li a{
+    /*Los elementos a que están en el li directamente de la clase nav, heredarán
+    las propiedes que les indicaremos a continuación*/
+    background-color: darkred;
+    color:azure;
+    text-decoration: none;
+    /*Le asignamos un padding de top y bottom de 10px, y a los laterales de 15px.
+    Esto es según vuestras características, NO hace falta coger el valor que 
+    indica el profe...*/
+    padding:10px 15px;
+    /*Por defecto, los elementos están en line, y si los dejamos como tal, se solapan...
+    Lo que hacemos, es convertir los elementos a block, y conseguiremos el resultado 
+    de un conjunto de cajas alineadas*/
+    display: block;
+}
+.nav li a:hover{
+    background-color: darksalmon;
+}
+.nav > li{
+    /*Indicamos que los elementos directos li que están en nav, tendran las siguientes
+    características:*/
+    float:left;
+}
+.nav li ul{
+    /*Ocultamos los submenus, y luego los mostraremos*/
+    display:none;
+    /*Establezco una posición absoluta a los submenus, con un tamaño mínimo de anchura
+    para que todos sean iguales*/
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul{
+    /*Mostramos los submenus cuando solo pasamos el ratón por encima de la opción
+    marcada*/
+    display: block;
+}
+.nav li ul li{
+    position:relative;
+}
+.nav li ul li ul{
+    right:-140px;
+    top:10px;
+}

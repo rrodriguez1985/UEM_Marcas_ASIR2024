@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: content-box;
+}
+body{
+    background-image: url(../img/doncic.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+ul{
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav li {
+    display:inline-block;
+    width:200px;
+    margin:-2px;
+    background-color: gold;
+    border:1px solid purple;
+    text-align: center;
+    color:purple;
+}
+nav li:hover {
+    background-color: purple;
+    border:1px solid gold;
+    color:gold;
+}
